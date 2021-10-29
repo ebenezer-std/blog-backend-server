@@ -39,14 +39,15 @@ input PostInput{
 type Query{
     posts: [Post!]!
     post(title: String): Post
-    #post(author: String): Post
-    #authors: [Author]!
+    post(author: String): Post
+    authors: [Author]!
 
      
 }
 
 type Mutation{
     createPost(input: PostInput!): Post!
+    
 
 }
 
